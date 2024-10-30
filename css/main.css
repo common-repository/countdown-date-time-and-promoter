@@ -1,0 +1,65 @@
+.displayFrame {
+text-align: <?php echo esc_attr($displayTextAlign);?>;
+padding: 5px;
+color: <?php echo esc_attr($displayFontColor);?>;
+background-color: <?php 
+if (esc_attr($displayJustBackgroundColor) == "1"){
+echo esc_attr($displayBackgroundColor);
+} else {
+ echo "none";  
+}
+?>;
+}
+
+#displayCounter {
+font-size: <?php echo esc_attr($displayFontSizeCountdown);?>em;
+display: <?php if ( esc_attr($displayJustCountdown) == "1" )
+               { echo "block"; } 
+               else {echo "none";}
+         ?>
+}
+
+#current-date {
+margin-top: 3px;
+font-size: <?php echo esc_attr($displayFontSizeDate);?>em;
+display: <?php if ( esc_attr($displayJustDate) == "1" )
+               { echo "block"; } 
+               else {echo "none";}
+         ?>
+}
+
+#current-time {
+font-size: <?php echo esc_attr($displayFontSizeTime);?>em;
+display: <?php if ( esc_attr($displayJustTime) == "1" )
+               { echo "block"; } 
+               else {echo "none";}
+         ?>
+}
+
+#promoterText {
+margin-top: 15px;
+font-size: <?php echo esc_attr($displayFontSizePromoterText);?>em;
+font-weight: <?php echo esc_attr($displayFontWeight);?>;
+display: <?php if ( esc_attr($displayJustPromoterText) == "1" )
+               { echo "block"; } 
+               else {echo "none";}
+         ?>
+}
+
+#promoterLink {
+margin-top: 7px;
+font-size: <?php echo esc_attr($displayFontSizePromoterLink);?>em;
+display: <?php if ( esc_attr($displayJustPromoteLink) == "1" )
+               { echo "block"; } 
+               else {echo "none";}
+         ?>
+}
+
+a {
+text-decoration: <?php echo esc_attr($displayLinkUnderline);?>;
+color: <?php echo esc_attr($displayFontColor);?>;
+}
+
+.trans {
+color: transparent;
+}
